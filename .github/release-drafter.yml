@@ -1,15 +1,15 @@
 name-template: '$NEXT_MINOR_VERSION'
 tag-template: '$NEXT_MINOR_VERSION'
 categories:
-  - title: '🚀 New Features'
+  - title: '🚀 New Tests'
     labels:
-      - 'type:new'
-  - title: '🐞 Tests Fixes'
-    labels:
-      - 'type:fix'
+      - 'type:new feature'
   - title: '🔬 Other'
     labels:
       - 'type:other'
+  - title: '🐞 Test Fixes'
+    labels:
+      - 'type:bug'
 
 change-template: '* $TITLE (via #$NUMBER) - @$AUTHOR'
 template: |
