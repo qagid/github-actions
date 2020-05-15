@@ -8,3 +8,5 @@ Simple project for github actions in action)
 * add label
 * verify label
 * draft release
+
+Test
