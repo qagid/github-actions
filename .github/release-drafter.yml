@@ -1,0 +1,16 @@
+name-template: 'v$NEXT_PATCH_VERSION 🌈'
+tag-template: 'v$NEXT_PATCH_VERSION'
+categories:
+  - title: '🚀 New Tests'
+    labels:
+      - 'type:new'
+  - title: '🐛 Tests Fixes'
+    labels:
+      - 'type:fix'
+  - title: '🧰 Maintenance'
+    label: 'type:other'
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+template: |
+  ## Changes
+
+  $CHANGES
