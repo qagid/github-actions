@@ -19,7 +19,7 @@ import org.junit.jupiter.api.Test;
 @Page("/user/favorites")
 public class FavoritesWebTest {
 
-    private static final String NOTE_TEXT = "Cool place";
+    private static final String NOTE_TEXT_2 = "Cool place";
 
     private final WebSteps steps = new WebSteps();
 
@@ -35,8 +35,8 @@ public class FavoritesWebTest {
     @DisplayName("Adding to favorites for authorized user")
     public void shouldCreateUserNote() {
         steps.openNotesPage();
-        steps.createNoteWithText(NOTE_TEXT);
-        steps.notesShouldContainsNoteWithText(NOTE_TEXT);
+        steps.createNoteWithText(NOTE_TEXT_2);
+        steps.notesShouldContainsNoteWithText(NOTE_TEXT_2);
     }
 
     @Test
@@ -46,9 +46,9 @@ public class FavoritesWebTest {
     @DisplayName("Removing from favorites for authorized user")
     public void shouldDeleteUserNote() {
         steps.openNotesPage();
-        steps.createNoteWithText(NOTE_TEXT);
-        steps.deleteNoteWithText(NOTE_TEXT);
-        steps.notesShouldNotContainsNoteWithText(NOTE_TEXT);
+        steps.createNoteWithText(NOTE_TEXT_2);
+        steps.deleteNoteWithText(NOTE_TEXT_2);
+        steps.notesShouldNotContainsNoteWithText(NOTE_TEXT_2);
     }
 
     @AfterEach
