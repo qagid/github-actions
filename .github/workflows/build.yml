@@ -18,6 +18,6 @@ jobs:
         with:
           java-version: 1.8
       - name: "Compile"
-        run: ./gradlew compile
-      - name: "Compile"
+        run: ./gradlew compileTestJava
+      - name: "Test"
         run: ./gradlew test
