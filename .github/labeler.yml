@@ -10,5 +10,5 @@ theme:build:
 theme:core:
   - "src/main/*"
 
-theme:tests:
+theme:test:
   - "src/test/*"
